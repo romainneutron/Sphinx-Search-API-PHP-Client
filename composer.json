@@ -1,0 +1,20 @@
+{
+    "name": "neutron/sphinxsearch-api",
+    "description": "SphinxSearch PHP API",
+    "require": {
+        "php": ">=4"
+    },
+    "type": "library",
+    "keywords": ["Sphinx Search","search-engine","api"],
+    "homepage": "http://sphinxsearch.com/",
+    "version": "0.9.9",
+    "authors": [
+        {
+            "name": "Andrew Aksyonoff",
+            "homepage": "http://sphinxsearch.com/"
+        }
+    ],
+    "autoload": {
+        "classmap": ["sphinxapi.php"]
+    }
+}
