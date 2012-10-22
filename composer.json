@@ -4,6 +4,7 @@
     "require": {
         "php": ">=4"
     },
+    "license": "GPL",
     "type": "library",
     "keywords": ["Sphinx Search","search-engine","api"],
     "homepage": "http://sphinxsearch.com/",
