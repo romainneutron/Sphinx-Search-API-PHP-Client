@@ -1,7 +1,7 @@
 <?php
 
 //
-// $Id: sphinxapi.php 3087 2012-01-30 23:07:35Z shodan $
+// $Id: sphinxapi.php 3281 2012-07-08 20:45:52Z shodan $
 //
 
 //
@@ -511,9 +511,10 @@ class SphinxClient
 			return;
 		}
 				
-		assert ( is_int($port) );
 		$this->_host = $host;
-		$this->_port = $port;
+		if ( is_int($port) )
+			if ( $port )
+				$this->_port = $port;
 		$this->_path = '';
 
 	}
@@ -1258,7 +1259,7 @@ class SphinxClient
 						$nvalues = $val;
 						while ( $nvalues>0 && $p<$max )
 						{
-							$attrvals[$attr][] = sphUnpackU64 ( substr ( $response, $p, 8 ) ); $p += 8;
+							$attrvals[$attr][] = sphUnpackI64 ( substr ( $response, $p, 8 ) ); $p += 8;
 							$nvalues -= 2;
 						}
 					} else if ( $type==SPH_ATTR_STRING )
@@ -1708,5 +1709,5 @@ class SphinxClient
 }
 
 //
-// $Id: sphinxapi.php 3087 2012-01-30 23:07:35Z shodan $
+// $Id: sphinxapi.php 3281 2012-07-08 20:45:52Z shodan $
 //
