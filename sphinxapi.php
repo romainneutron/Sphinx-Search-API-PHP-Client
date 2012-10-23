@@ -1,7 +1,7 @@
 <?php
 
 //
-// $Id: sphinxapi.php 3281 2012-07-08 20:45:52Z shodan $
+// $Id: sphinxapi.php 3439 2012-10-10 05:47:48Z kevg $
 //
 
 //
@@ -742,7 +742,7 @@ class SphinxClient
 	/// set ranking mode
 	function SetRankingMode ( $ranker, $rankexpr="" )
 	{
-		assert ( $ranker>=0 && $ranker<SPH_RANK_TOTAL );
+		assert ( $ranker===0 || $ranker>=1 && $ranker<SPH_RANK_TOTAL );
 		assert ( is_string($rankexpr) );
 		$this->_ranker = $ranker;
 		$this->_rankexpr = $rankexpr;
@@ -1709,5 +1709,5 @@ class SphinxClient
 }
 
 //
-// $Id: sphinxapi.php 3281 2012-07-08 20:45:52Z shodan $
+// $Id: sphinxapi.php 3439 2012-10-10 05:47:48Z kevg $
 //
