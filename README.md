@@ -1,6 +1,6 @@
 # SphinxSearch PHP API
 
-[SphinxSearch](http://sphinxsearch.com/) is a powerful serach engine to index MySQL and PostgreSQL 
+[SphinxSearch](http://sphinxsearch.com/) is a powerful search engine to index MySQL and PostgreSQL 
 databases.
 
 This repository is used to make SphinxSearch API PHP Client available through 
