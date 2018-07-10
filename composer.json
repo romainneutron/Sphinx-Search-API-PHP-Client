@@ -2,9 +2,9 @@
     "name": "neutron/sphinxsearch-api",
     "description": "SphinxSearch PHP API",
     "require": {
-        "php": ">=4"
+        "php": ">=5"
     },
-    "license": "GPL",
+    "license": "GPL-2.0",
     "type": "library",
     "keywords": ["Sphinx Search","search-engine","api"],
     "homepage": "http://sphinxsearch.com/",
